@@ -6,7 +6,7 @@ import sys
 from multiprocessing import Process, Manager
 
 """
-python3 multisort.py [-i occurences.csv] [-o output.csv] [options]
+python3 csv_sort.py [-i occurences.csv] [-o output.csv] [options]
 
 The first row of the input CSV must be a header row.
 
@@ -16,7 +16,7 @@ Options:
   -o | --output : Output file, defaults to an adjacent output.csv file
   -c | --columns : The list of fields to nclude in the output
   -u | --unique : The column to filter for unique values on
-  -k | --kingdoms : The list of valid kingdoms to include
+  -k | --kingdom : The list of valid kingdoms to include
 """
 
 
@@ -65,7 +65,7 @@ def main():
             columns = a.split(',')
         elif o in ("-u", "--unique"):
             unique = a
-        elif o in ("-k", "--kingdoms"):
+        elif o in ("-k", "--kingdom"):
             kingdoms = ["kingdom", ""]
             kingdoms += a.split(',')
         else:
