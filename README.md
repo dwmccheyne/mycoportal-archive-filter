@@ -13,11 +13,11 @@ Options:
   -o | --output : Output file, defaults to an adjacent output.csv file\
   -c | --columns : The list of fields to nclude in the output\
   -u | --unique : Select a column to sort for unique values on\
-  -k | --kingdom : The list of kingdoms to include\
+  -k | --kingdoms : The list of kingdoms to include\
   TODO ..
-  -p | --phylum : The list of phylum to include\
-  -c | --class : The list of class to include\
-  -o | --order : The list of order to include\
-  -f | --family : The list of family to include\
-  -g | --genus : The list of genus to include\
+  -p | --phylums : The list of phylum to include\
+  -c | --classes : The list of class to include\
+  -o | --orders : The list of order to include\
+  -f | --families : The list of family to include\
+  -g | --genera : The list of genus to include\
   -s | --species : The list of species to include

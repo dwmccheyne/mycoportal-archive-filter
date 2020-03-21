@@ -65,9 +65,17 @@ def main():
             columns = a.split(',')
         elif o in ("-u", "--unique"):
             unique = a
-        elif o in ("-k", "--kingdom"):
+        elif o in ("-k", "--kingdoms"):
             kingdoms = ["kingdom", ""]
             kingdoms += a.split(',')
+        elif o in ("-p", "--phylums"):
+            phylum = a
+        elif o in ("-c", "--classes"):
+            classes = a
+        elif o in ("-o", "--orders"):
+        elif o in ("-f", "--families"):
+        elif o in ("-g", "--genera"):
+        elif o in ("-s", "--species"):
         else:
             assert False, "unhandled option"
 
